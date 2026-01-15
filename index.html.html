@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>和美農會•美人魚咖啡館｜在地農產・安心咖啡</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    :root{
+      --brand:#2f5d50;   /* 深綠：農會/在地感 */
+      --accent:#8b5e3c;  /* 咖啡色 */
+      --bg:#fbfaf7;      /* 米白底 */
+    }
+    body{ background:var(--bg); }
+    .navbar{ background: rgba(251,250,247,.92); backdrop-filter: blur(10px); }
+    .brand-dot{ color:var(--accent); }
+    .hero{
+      background: linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.55)),
+                  url("https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1600&q=60");
+      background-size: cover;
+      background-position: center;
+      min-height: 78vh;
+      color: #fff;
+      display:flex;
+      align-items:center;
+    }
+    .badge-soft{
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.22);
+    }
+    .section-title{
+      color:var(--brand);
+      letter-spacing:.04em;
+    }
+    .card{ border:0; box-shadow: 0 8px 24px rgba(0,0,0,.06); }
+    .btn-brand{
+      background:var(--brand);
+      border-color:var(--brand);
+      color:#fff;
+    }
+    .btn-brand:hover{ filter: brightness(.95); color:#fff; }
+    .btn-outline-accent{
+      border-color:var(--accent);
+      color:var(--accent);
+    }
+    .btn-outline-accent:hover{
+      background:var(--accent);
+      border-color:var(--accent);
+      color:#fff;
+    }
+    .small-muted{ color:rgba(0,0,0,.6); }
+    footer{ border-top: 1px solid rgba(0,0,0,.08); }
+    .anchor-offset{ scroll-margin-top: 88px; }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">
+        和美農會<span class="brand-dot">·</span>美人魚咖啡館
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#about">關於</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">主打</a></li>
+          <li class="nav-item"><a class="nav-link" href="#space">空間</a></li>
+          <li class="nav-item"><a class="nav-link" href="#visit">來訪</a></li>
+        </ul>
+        <div class="ms-lg-3 mt-3 mt-lg-0 d-grid d-lg-block">
+          <a class="btn btn-brand" href="#visit">導航與聯絡</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <span class="badge badge-soft rounded-pill px-3 py-2">農會直營・安心選品</span>
+            <span class="badge badge-soft rounded-pill px-3 py-2">在地農產・產地溯源</span>
+            <span class="badge badge-soft rounded-pill px-3 py-2">社區交流・友善空間</span>
+          </div>
+
+          <h1 class="display-5 fw-bold mb-3">把土地的香氣，沖進每一杯咖啡裡</h1>
+          <p class="lead mb-4">
+            一個優雅閒適的休憩空間前段萃取的堅持確保滴滴都是咖啡的精華。
+            來坐坐，喝一杯，也認識這片土地的故事。
+          </p>
+
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-brand btn-lg" href="#menu">看主打商品</a>
+            <a class="btn btn-outline-light btn-lg" href="#about">了解農會直營</a>
+          </div>
+
+          <p class="mt-4 mb-0 small">
+            <span class="opacity-75">營業時間：</span> 08:00–18:00（週一公休）｜電話：0985727536          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="anchor-offset py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <h2 class="section-title fw-bold mb-3">關於我們</h2>
+          <p class="mb-3">
+            「和美農會美人魚咖啡廳」以在地農產為核心，從咖啡豆、茶飲到點心選用，
+            優先與在地農民、產銷班與契作夥伴合作，讓每一份風味都有來源、有溫度。
+          </p>
+          <ul class="list-unstyled mb-4">
+            <li class="mb-2">✅ 農會直營：品質把關與價格透明</li>
+            <li class="mb-2">✅ 產地溯源：支持在地、看得見的安心</li>
+            <li class="mb-2">✅ 推廣平台：農產展售與友善交流空間</li>
+          </ul>
+
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-brand" href="#visit">我要前往</a>
+            <a class="btn btn-outline-accent" href="#space">看看空間</a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card overflow-hidden">
+           <img
+              src="https://scontent-tpe1-1.xx.fbcdn.net/v/t39.30808-6/481015631_563659053390140_1798569284821407620_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=xXpx0HPSt64Q7kNvwH6MSG3&_nc_oc=AdnX6G7QAj9w1GA-XpjmGshjmrXDaJ011eQrrMXe_R0o6f-40i7eJIkjrqAP2--1ed4M2KafT_3me74ocPWRRfIB&_nc_zt=23&_nc_ht=scontent-tpe1-1.xx&_nc_gid=_bqF4yBSyxYiwMZD0b5cgg&oh=00_AfqTL2g0Nt6EZwTABaWPwoEfdZFmBE-RB2bKeQPf537GEQ&oe=696EA5A2"
+              alt="咖啡廳照片（可替換為實景）"
+            />
+
+            <div class="card-body">
+              <div class="row text-center">
+                <div class="col">
+                  <div class="fw-bold" style="color:var(--brand);">在地合作</div>
+                  <div class="small-muted">農民 / 產銷班</div>
+                </div>
+                <div class="col">
+                  <div class="fw-bold" style="color:var(--brand);">溯源安心</div>
+                  <div class="small-muted">產銷履歷</div>
+                </div>
+                <div class="col">
+                  <div class="fw-bold" style="color:var(--brand);">友善空間</div>
+                  <div class="small-muted">社區共享</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="small text-muted mt-2 mb-0">*圖片為美人魚咖啡廳實景。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu / Highlights -->
+  <section id="menu" class="anchor-offset py-5">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end mb-3">
+        <div>
+          <h2 class="section-title fw-bold mb-1">主打商品</h2>
+          <p class="text-muted mb-0">每日精選，手作甜點。</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img class="img-fluid" alt="手沖單品" src="https://scontent-tpe1-1.xx.fbcdn.net/v/t39.30808-6/497400075_10056292694393319_7978843597951823433_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=cQodDqWL66YQ7kNvwEGAg6G&_nc_oc=AdkQEHDokms8dQT-hVJxufgLB1KJhfnpn4RioJjXAvUq1oMLW0k8BacvO4JfdraE3UMDTqDh1iT9CPmnp29r5PKk&_nc_zt=23&_nc_ht=scontent-tpe1-1.xx&_nc_gid=fTW-k1NfMQv4DP8iFuJikQ&oh=00_AfoalyX-oyXdC_gWvQ8xrv4Q19eAxjolN6I_LPK2JpD4CA&oe=696EC527">
+            <div class="card-body">
+              <h5 class="fw-bold">手沖單品｜莊園風土系列</h5>
+              <p class="text-muted mb-0">嚴選世界經典豆款為主角，依烘焙度呈現花香、柑橘酸調性。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img class="img-fluid" alt="綠豆糕" src="https://scontent-tpe1-1.xx.fbcdn.net/v/t39.30808-6/480559238_553703424385703_4270729710934472628_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=bVOp8R8nHAAQ7kNvwE21UyO&_nc_oc=AdmOS_sLA9vghHglB170geXUKlO_DzWwa081UThkEaXTb4Vkb48b1m5DrXLJ7i-akyVdSdB6JnVXsn1u-Q_cGveH&_nc_zt=23&_nc_ht=scontent-tpe1-1.xx&_nc_gid=5vrlDLbuOlTmAQ8CGvWs0w&oh=00_AfrQ2ZXcsgOAw6k7wubgUw0S9_VYf33J3wDQPW379KKB-A&oe=696EB74C">
+            <div class="card-body">
+              <h5 class="fw-bold">桂花釀香｜綿柔茶點</h5>
+              <p class="text-muted mb-0">滑順綠豆味與桂花香氣平衡，適合第一次來訪的你。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img class="img-fluid" alt="雪花凍" src="https://scontent-tpe1-1.xx.fbcdn.net/v/t39.30808-6/474702418_536388559450523_5805684599495568858_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=0juxYJI7aI8Q7kNvwEO5Pp4&_nc_oc=AdmsWPpZfp17jGxfmSor9o_1J-DpFPhMzxlY4cDF_ET9ZAelF3jjwF4shCmDHwVBZsGT51fHRdVRMSyPp85OzKWz&_nc_zt=23&_nc_ht=scontent-tpe1-1.xx&_nc_gid=LjwSwJBlWMVU-zKC89TsVw&oh=00_AfrsuWUGLQ8aODNrTiFKX4owBOtOFLloRzup_UiVFDkW3A&oe=696EBF24">
+            <div class="card-body">
+              <h5 class="fw-bold">創意點心｜椰香雪花凍</h5>
+              <p class="text-muted mb-0">以在地食材製作的小點心，搭配咖啡更有層次。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-4 d-flex flex-wrap gap-2">
+        <a class="btn btn-outline-accent" href="#visit">索取完整菜單 / 團體預約</a>
+        <a class="btn btn-brand" href="#about">了解來源與故事</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Space -->
+  <section id="space" class="anchor-offset py-5">
+    <div class="container">
+      <h2 class="section-title fw-bold mb-3">空間與活動</h2>
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <div class="card overflow-hidden">
+            <img class="img-fluid" alt="空間照片" src="https://scontent-tpe1-1.xx.fbcdn.net/v/t39.30808-6/615213812_886596604008208_8296945613167175047_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Lb2Mpm4ceAUQ7kNvwGVajOC&_nc_oc=AdmOTDlaa0Sh4h0T3CfrJEwBRyv82XO53p2dz-MsgM7g1zUPf5LkqmzzquZcnTb6B6GxSdrF44f6tAPzAUYDja4p&_nc_zt=23&_nc_ht=scontent-tpe1-1.xx&_nc_gid=Hg6-Zx3hGqC4IWRM1-qQvA&oh=00_AfpQavuqDJE4EUtASnVMjU74pqqmP3-oJp-ijzhl-cG7pg&oe=696ED7F5">
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="fw-bold">讓咖啡廳成為社區的客廳</h5>
+              <p class="text-muted">
+                我們不只提供飲品，也提供一個「可以慢下來」的地方。
+                若有農產推廣、小型展覽、社區講座或團體參訪需求，歡迎聯絡洽談。
+              </p>
+
+              <div class="border rounded-3 p-3 mb-3 bg-white">
+                <div class="fw-bold mb-2" style="color:var(--brand);">可提供</div>
+                <ul class="mb-0">
+                  <li>小型講座 / 交流活動</li>
+                  <li>農產展售 / 品嚐體驗</li>
+                  <li>社區團體參訪</li>
+                </ul>
+              </div>
+
+              <a class="btn btn-brand w-100" href="#visit">活動 / 團體預約</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visit -->
+  <section id="visit" class="anchor-offset py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <h2 class="section-title fw-bold mb-3">來訪資訊</h2>
+          <div class="card">
+            <div class="card-body">
+              <div class="mb-3">
+                <div class="fw-bold">地址</div>
+                <div class="text-muted">彰化縣和美鎮彰美五段266號（和美農會農遊館）</div>
+              </div>
+              <div class="mb-3">
+                <div class="fw-bold">營業時間</div>
+                <div class="text-muted">08:00–18:00（週一公休）</div>
+              </div>
+              <div class="mb-3">
+                <div class="fw-bold">電話</div>
+                <div class="text-muted">0985727536</div>
+              </div>
+              <div class="mb-4">
+                <div class="fw-bold">社群 / 聯絡</div>
+                <div class="text-muted">Facebook：和美農會美人魚咖啡館｜LINE：@xxxxxx</div>
+              </div>
+
+              <div class="d-grid gap-2">
+                <!-- 你可以把下面兩個連結換成自己的 -->
+                <a class="btn btn-brand" target="_blank" rel="noopener"
+                   href="https://www.google.com/maps/search/?api=1&query=彰化縣">
+                  使用 Google 地圖導航
+                </a>
+                <a class="btn btn-outline-accent" href="tel:0412345678">一鍵撥打電話</a>
+              </div>
+
+              <p class="small text-muted mt-3 mb-0">
+                小提醒：若遇活動包場或臨時公休，請以社群公告為準。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="card overflow-hidden">
+            <!-- Google Maps Embed：把 src 換成你的店址嵌入碼 -->
+            <iframe
+              title="Google Map"
+              src="https://www.google.com/maps?q=彰化縣&output=embed"
+              width="100%" height="420"
+              style="border:0;"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <p class="small text-muted mt-2 mb-0">* 點選地圖可另開新分頁。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <div class="text-muted">© <span id="year"></span> 和美農會美人魚咖啡館</div>
+      <div class="text-muted small">此網頁為測試之非正式官方網站，僅供農會考試備審資料使用（林韋君製）。</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
